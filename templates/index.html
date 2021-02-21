@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Form</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: black;
+        text-align: left;
+    }
+    
+    label {
+        color: black;
+        font-family: calibri;
+    }
+</style>
+
+<body style="background: url(bgg.jpg) no-repeat; background-size: cover;">
+    <br><br>
+    <h1>
+        <center>
+            <p style="color:#ffffff;font-family: Calibri; ">CUSTOMIZE YOUR STACK</p>
+        </center>
+    </h1>
+    <!-- <p class="double border"></p> -->
+    <!-- <img src="bgg.jpg" alt="no" class="right" width="700" height="400" style="float:right"> -->
+
+    <div style="background-color: white; height: fit-content; width: fit-content;padding:20px 40px; border-radius: 10px;margin-left: auto;margin-right: auto;">
+        <form id="frm1" action="{{url_for("hello")}}" method="post">
+            <label for="fname"><b><p>DESCRIPTION</b> </label><br>
+            <input type="textbold" id="fname" name="fname" value=" "><br><br><br>
+            <label for="keyname"><b>KEYPAIR </b></label><br>
+            <input type="text" id="keyname" name="lname" value=" "><br><br><br>
+            <label for="itype"><b>INSTANCE TYPE</b> </label><br>
+            <input type="text" id="itype" name="lname" value=" "><br><br><br>
+            <label for="lname"><b>DATABASE-NAME</b> </label><br>
+            <input type="text" id="lname" name="lname" value=" "><br><br><br>
+            <label for="dbuse"><b>DATABASE-USER</b> </label><br>
+            <input type="text" id="dbuse" name="lname" value=" "><br><br><br>
+            <label for="dbpass"> <b>DATABASE-PASSWORD</b> </label><br>
+            <input type="text" id="dbpass" name="lname" value=" "><br><br><br>
+            <label for="dbrpass"> <b>DATABASE ROOT-PASSWORD</b> </label><br>
+            <input type="text" id="dbrpass" name="lname" value=" "><br><br><br>
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+                <a href="ui.html">
+                    <input type="submit" value="Submit"></a><input type="reset" value="Close">
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
